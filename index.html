@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container" >
+        <form id="createForm" class="form-container">
+            <h2>Create a New Product</h2>
+            <input required type="text" id="create-title" class="formInput" placeholder="Product Title"> <br>
+            <input required type="number" id="create-price" class="formInput" placeholder="Product Price"> <br>
+            <textarea required id="create-description" cols="30" rows="10" class="formInput" placeholder="Product Description"></textarea> <br>
+            <input required type="number" id="create-discount" class="formInput" placeholder="Product Discount"> <br>
+            <input type="url" id="create-image" class="formInput" placeholder="Product Image URL"> <br>
+            <button type="submit">Create Product</button>
+        </form>
+    
+        <form id="updateForm" class="form-container">
+            <h2>Update a Product</h2>
+            <input required type="text" id="update-title" class="formInput" placeholder="Product Title"> <br>
+            <input required type="number" id="update-price" class="formInput" placeholder="Product Price"> <br>
+            <textarea required id="update-description" cols="30" rows="10" class="formInput" placeholder="Product Description"></textarea> <br>
+            <input required type="number" id="update-discount" class="formInput" placeholder="Product Discount"> <br>
+            <input type="url" id="update-image" class="formInput" placeholder="Product Image URL"> <br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    
+    <div id="result" class="cards-container"></div>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
